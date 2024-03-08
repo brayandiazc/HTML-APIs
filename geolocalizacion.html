@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Geolocalización con Google Maps</title>
+    <link rel="stylesheet" href="assets/css/geolocalizacion.css" />
+  </head>
+  <body>
+    <nav>
+      <li><a href="index.html">Index</a></li>
+      <li><a href="camara.html">Camara</a></li>
+      <li><a href="draganddrop.html">Drag and Drop</a></li>
+      <li><a href="geolocalizacion.html">Geolocalizacion</a></li>
+      <li><a href="localstorage.html">Local Storage</a></li>
+    </nav>
+    <h1>Geolocalización con Google Maps</h1>
+    <p>Haz clic en el botón para obtener tu ubicación.</p>
+    <button onclick="getLocation()">Obtener Ubicación</button>
+
+    <div id="map"></div>
+
+    <script src="assets/js/geolocalizacion.js"></script>
+
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=APIKey&callback=initMap"
+    ></script>
+  </body>
+</html>

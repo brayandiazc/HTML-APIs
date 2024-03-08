@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/localstorage.css" />
+    <link
+      rel="shortcut icon"
+      href="assets/img/favicon.png"
+      type="image/x-icon"
+    />
+    <title>CRUD App</title>
+  </head>
+
+  <body>
+    <nav>
+      <li><a href="index.html">Index</a></li>
+      <li><a href="camara.html">Camara</a></li>
+      <li><a href="draganddrop.html">Drag and Drop</a></li>
+      <li><a href="geolocalizacion.html">Geolocalizacion</a></li>
+      <li><a href="localstorage.html">Local Storage</a></li>
+    </nav>
+    <div class="container">
+      <h1>CRUD App</h1>
+
+      <div class="form-container">
+        <h2>Create Element</h2>
+        <form id="create-form">
+          <input type="text" id="name-input" placeholder="Name" required />
+          <textarea
+            id="description-input"
+            placeholder="Description"
+            required
+          ></textarea>
+          <button type="submit">Create</button>
+        </form>
+      </div>
+
+      <div>
+        <h2>All Elements</h2>
+        <ul id="element-list"></ul>
+      </div>
+    </div>
+
+    <script src="assets/js/localstorage.js"></script>
+  </body>
+</html>

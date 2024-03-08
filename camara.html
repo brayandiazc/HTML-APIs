@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>API Camara 📸</title>
+    <link rel="stylesheet" href="assets/css/camara.css" />
+  </head>
+  <body>
+    <nav>
+      <li><a href="index.html">Index</a></li>
+      <li><a href="camara.html">Camara</a></li>
+      <li><a href="draganddrop.html">Drag and Drop</a></li>
+      <li><a href="geolocalizacion.html">Geolocalizacion</a></li>
+      <li><a href="localstorage.html">Local Storage</a></li>
+    </nav>
+    <h1>API Camara 📸</h1>
+    <div id="video-container">
+      <video id="video-preview" autoplay></video>
+    </div>
+    <button id="capture-btn" onclick="captureImage()">Tomar Foto</button>
+    <canvas id="canvas" style="display: none"></canvas>
+    <script src="assets/js/camara.js"></script>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drag and Drop Example</title>
+    <link rel="stylesheet" href="assets/css/draganddrop.css" />
+  </head>
+  <body>
+    <nav>
+      <li><a href="index.html">Index</a></li>
+      <li><a href="camara.html">Camara</a></li>
+      <li><a href="draganddrop.html">Drag and Drop</a></li>
+      <li><a href="geolocalizacion.html">Geolocalizacion</a></li>
+      <li><a href="localstorage.html">Local Storage</a></li>
+    </nav>
+    <h1>Drag and Drop Example</h1>
+    <div
+      id="drop-area"
+      ondrop="dropHandler(event)"
+      ondragover="dragOverHandler(event)"
+      ondragenter="dragEnterHandler(event)"
+      ondragleave="dragLeaveHandler(event)"
+    >
+      Arrastra y suelta una imagen aquí
+    </div>
+    <div id="image-preview"></div>
+
+    <script src="assets/js/draganddrop.js"></script>
+  </body>
+</html>
